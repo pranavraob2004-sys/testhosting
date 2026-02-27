@@ -1,0 +1,13 @@
+<div style="max-width:400px;margin:auto;margin-top:50px;">
+  <h2>Email OTP Verification</h2>
+
+  <input [(ngModel)]="email" placeholder="Enter Email" />
+  <button (click)="sendOtp()">Send OTP</button>
+
+  <br><br>
+
+  <input [(ngModel)]="otp" placeholder="Enter OTP" />
+  <button (click)="verifyOtp()">Verify OTP</button>
+
+  <p>{{message}}</p>
+</div>
